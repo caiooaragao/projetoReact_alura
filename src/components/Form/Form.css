@@ -1,0 +1,14 @@
+.form-container{
+    padding:10px 40px 40px 40px;
+    margin: 20px 80px;
+
+    border-radius: 10px;
+    background-color: #F2F2F2;
+    justify-content: center;
+    box-shadow: 8px 8px 16px rgba(0, 0 ,0, 0.1);
+}
+.form-container form{
+    max-width: 80%;
+    
+   
+}
