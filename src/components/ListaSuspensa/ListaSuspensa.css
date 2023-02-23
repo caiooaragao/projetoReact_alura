@@ -1,0 +1,21 @@
+.opcoes-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.opcao{
+    font-size: 20px;
+}
+.select{
+  
+    padding: 10px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.select::placeholder{
+    color: rgb(180, 180, 180);
+}
