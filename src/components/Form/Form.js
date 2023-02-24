@@ -7,25 +7,24 @@ import ButtonSubmit from "../ButtonSubmit/ButtonSubmit";
 
 
 function Form(props){
-const minhaLista = [
-    "senior", "junior", "pleno", "estagiário",
-]
 
-const enviarDados = (e) =>{ 
-    e.preventDefault()
-    props.aoColaboradorCadastrado({
-        nome,
-        cargo,
-        imagem,
-        time
-    })
+
+
+    const enviarDados = (e) =>{ 
+        e.preventDefault()
+        props.aoColaboradorCadastrado({
+            nome,
+            cargo,
+            imagem,
+            time
+        })
 
 }
 
-const [nome, setNome] = useState('')
-const [cargo, setCargo] = useState('')
-const [imagem, setImagem] = useState('')
-const [time, setTime] = useState('')
+    const [nome, setNome] = useState('')
+    const [cargo, setCargo] = useState('')
+    const [imagem, setImagem] = useState('')
+    const [time, setTime] = useState('')
 
     return(  
         <form className="form-container" onSubmit={enviarDados}>
@@ -55,7 +54,7 @@ const [time, setTime] = useState('')
             aoAlterado={valor => setImagem(valor)}/>
             
             <ListaSuspensa 
-            lista={minhaLista} 
+            itens={props.times}
             label="selecione uma opçao"
             aoAlterado={valor => setTime(valor)} />
             <ButtonSubmit>Criar você </ButtonSubmit>
