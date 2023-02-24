@@ -17,8 +17,12 @@ function Form(props){
             cargo,
             imagem,
             time
+           
         })
-
+        setNome('')
+        setCargo('')
+        setImagem('')
+        setTime('')
 }
 
     const [nome, setNome] = useState('')

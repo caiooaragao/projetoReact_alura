@@ -4,6 +4,7 @@ import './App.css';
 import Banner from './components/Banner/Banner';
 import Colaborador from './components/Colaborador/Colaborador';
 import Form from './components/Form/Form';
+import Rodape from './components/Rodape/Rodape';
 import Time from './components/Time/Time';
 
 function App() {
@@ -68,8 +69,9 @@ function App() {
       nomeTime={time.nome} 
       corPrimaria={time.corPrimaria} 
       corSecundaria={time.corSecundaria}
-      colaboradores={colaboradores}
+      colaboradores={colaboradores.filter(colaborador => colaborador.time == time.nome)}
       />)} 
+      <Rodape/>
       
     </>
     

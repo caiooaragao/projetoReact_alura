@@ -13,7 +13,7 @@ function Input(props){
     
         <div className="input-container">
             <label htmlFor={props.nome}>{props.nome}</label>
-            <input onChange={aoDigitado} required={props.required} type={props.type} placeholder={props.placeholder} name={props.nome}   />
+            <input id={props.nome} onChange={aoDigitado} required={props.required} type={props.type} placeholder={props.placeholder} name={props.nome} value={props.valor}  />
         </div>
     )
 }
