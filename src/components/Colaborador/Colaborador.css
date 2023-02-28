@@ -13,6 +13,13 @@
     position: relative;
     bottom: -50px;
 }
+.rodape{
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .colaborador .rodape {
     background: #FFFFFF;

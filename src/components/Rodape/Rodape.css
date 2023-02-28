@@ -5,10 +5,12 @@
     display: flex;
     box-sizing: border-box;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .rodape{
     display: flex;
+    flex-direction: row;
 }
 
 .rodape ul{
